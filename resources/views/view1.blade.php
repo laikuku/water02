@@ -97,7 +97,7 @@
                         </td>
                         <td>
                             <a class="btn btn-primary" href="{{ route('editContact', $task->id) }}">編輯</a>|
-                            <a class="btn btn-primary" href="{{ route('deleteContact', $task->id) }}">刪除</a>
+                            <a class="btn btn-primary" href="{{ route('deleteContact', $task->id) }}" onclick="return confirm('Are you sure you want to Delete?')">刪除</a>
                         </td>
                     </tr>
 
